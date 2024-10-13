@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script defer src="./assets/fontawesome/js/fontawesome.min.js"></script>
+  <script defer src="./assets/fontawesome/js/solid.min.js"></script>
+
+  <script>
+    window.onload = () => {
+      const mobileMenuIcon = document.getElementById("mobile-menu-button");
+      mobileMenuIcon.addEventListener("click", () => {
+        if (mobileMenuIcon.classList.contains("open")) {
+          mobileMenuIcon.classList.remove("open");
+        } else {
+          mobileMenuIcon.classList.add("open");
+        }
+      });
+    };
+  </script>
+
+</head>
+<body>
+    <main>
+
+        <nav class="flex top-0  bg-[#D3D1CE] gap-9 justify-between ">
+            <!-- logo -->
+            <a href="./index.html">
+                <div class="p-2">
+                    <img src="./assets/images/logo/logo.png" alt="" width="150">
+                </div>
+            </a>
+            
+
+            <!-- mobile viwe -->
+            <div class="block mdh pr-4 my-auto ml-auto cursor-pointer z-[10]">
+                <button id="mobile-menu-button" class="group peer">
+                    <div class="bg-[#E28917] rounded-full h-1 w-8 top-0 group-open:rotate-45 transition-all group-open:top-2 relative"></div>
+                    <div class="bg-[#E28917] rounded-full h-1 w-8 mt-1 opacity-100 group-open:opacity-0 transition-all"></div>
+                    <div class="bg-[#E28917] rounded-full h-1 w-8 top-0 mt-1 group-open:-rotate-45 transition-all group-open:-top-2 relative"></div>
+                </button>
+
+                <div class="absolute top-[62px]  bg-[#D3D1CE] w-full left-0 peer-open:block hidden">
+                    <a href="#">
+                        <div class="relative h-full flex items-center justify-center cursor-pointer p-4 transition-colors ease-in-out hover:bg-[#9EA0A3] text-xl text-[#010101] font-sans">
+                            <span>PRODUCTS</span>
+                        </div>
+                    </a>
+                    
+
+                    <div class="group relative h-full cursor-pointer text-[#010101] font-sans text-xl transition-colors ease-in-out  hover:bg-[#9EA0A3]">
+                    
+                        <div class="p-4 text-center group">CATEGORY</div>
+                        <div class="hidden group-hover:block">
+                            <a href="./T-SHIRTS.html">
+                                <div class="relative text-center p-4 text-[#010101] font-sans text-xl   hover:bg-[#878787] transition-colors ease-out">
+                                    <span>T-shirts</span>
+                                </div>
+                            </a>
+                            <a href="./SHIRTS.html">
+                                <div class="relative text-center p-4 text-[#010101] font-sans text-xl   hover:bg-[#878787] transition-colors ease-out">
+                                    <span>shirts</span>
+                                </div>
+                            </a>
+                            <a href="./Pants and shorts.html">
+                                <div class="relative text-center p-4 text-[#010101] font-sans text-xl   hover:bg-[#878787] transition-colors ease-out">
+                                    <span>Pants and shorts</span>
+                                </div>
+                            </a>
+                            <a href="./Dresses.html">
+                                <div class="relative text-center p-4 text-[#010101] font-sans text-xl   hover:bg-[#878787] transition-colors ease-out">
+                                    <span>Dresses</span>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="relative text-center p-4 text-[#010101] font-sans text-xl   hover:bg-[#878787] transition-colors ease-out">
+                                    <span>Suit</span>
+                                </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="relative h-full flex items-center justify-center cursor-pointer p-4 transition-colors ease-in-out hover:bg-[#9EA0A3] text-xl text-[#010101] font-sans">
+                        <a href="#"><span>APPS</span></a> 
+                    </div>
+                    <div class="relative h-full flex items-center justify-center cursor-pointer p-4 transition-colors ease-in-out hover:bg-[#9EA0A3] text-xl text-[#010101] font-sans">
+                        <a href="#footer" class="scroll-smooth transition-all ease-in-out"><span>CONTACT US</span></a> 
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- desktop -->
+
+            <!-- right side -->
+            <div class="flex-1 justify-end gap-5 hidden mdl">
+
+                <div class="flex items-center justify-center text-[#010101]">
+                    <div class="relative flex h-full items-center p-3 cursor-pointer text-lg font-sans">
+                        <span class="hover:border-b-black border border-[#D3D1CE] transition-all ease-in-out hover-text" >
+                            PRODUCTS</span> 
+                    </div>
+                    <div class="group relative flex h-full items-center p-3 cursor-pointer text-lg font-sans">
+                        <span class="hover:border-b-black border border-[#D3D1CE] transition-all ease-in-out hover-text">
+                            CATEGORY
+                        </span>
+
+                        <div class=" group-hover:block hidden absolute top-full  right-0 bg-[#D3D1CE] text-center whitespace-nowrap rounded-b-md transition-all ease-in-out hover-text z-20">
+                            <div class="p-2 hover:bg-[#9EA0A3]">
+                                <a href="./T-SHIRTS.html" class="transition-all ease-in-out duration-300"><span>T-shirts</span></a>
+                            </div>
+                            <div class="p-2 hover:bg-[#9EA0A3]">
+                                <a href="./SHIRTS.html" class="transition-all ease-in-out duration-300"><span>shirts</span></a>
+                            </div>
+                            <div class="p-2 hover:bg-[#9EA0A3]">
+                                <a href="./Pants and shorts.html" class="transition-all ease-in-out duration-300"><span>Pants and shorts</span></a>
+                            </div>
+                            <div class="p-2 hover:bg-[#9EA0A3]">
+                                <a href="./Dresses.html" class="transition-all ease-in-out duration-300"><span>Dresses</span></a>
+                            </div>
+                            <div class="p-2 hover:bg-[#9EA0A3]">
+                                <a href="./T-SHIRTS.html" class="transition-all ease-in-out duration-300"><span>Suit</span></a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="relative flex h-full items-center p-3 cursor-pointer text-lg font-sans">
+                        <span class="hover:border-b-black border border-[#D3D1CE] transition-all ease-in-out hover-text">
+                            APPS
+                        </span>
+                    </div>
+                    <div class="relative flex h-full items-center p-3 cursor-pointer text-lg font-sans">
+                        <a href="#footer" class="scroll-smooth transition-all ease-in-out">
+                            <span class="hover:border-b-black border border-[#D3D1CE] transition-all ease-in-out hover-text">
+                                CONTACT US
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="hidden xl:flex items-center justify-center gap-1 relative">
+                    <input type="search" placeholder="Search for a product" class=" px-6 py-2 w-[280px] bg-[#FFF] rounded-lg ">
+                    <img src="./assets/images/logo/icons.png" class="absolute right-1">
+                </div>
+
+
+                <div class="flex items-center justify-center gap-2 text-lg mr-5">
+                    <div class="bg-white rounded-3xl py-2 px-2">
+                        <button class="px-3 py-1 bg-white rounded-2xl hover:text-[#E28917] transition-all ease-in-out hover-text"><span>LOG IN</span> </button>
+                        <button class="px-4 py-1 bg-[#E28917] rounded-2xl hover:bg-[#ff9205] transition-colors ease-in-out hover-button-sm">SIGN UP</button>
+                    </div>                        
+                </div>
+            </div>               
+        </nav>
+
+        <!-- container w-[455px] -->
+        <!-- left -->
+        <section class="flex sm:pl-9 gap-8 lgm py-12 justify-center  items-start flex-wrap containeranimation ">
+            <div class="flex flex-col gap-5  justify-center items-center">
+                <div id="cover" style="background-image: url(./assets/images/T-shirt/Plain\ T-shirts-2.jpg);"
+                    class="bg-cover bg-center h-[24rem] w-[100%] rounded-lg shadow-lg shadow-black/10">
+                </div>
+                <div class="flex gap-5 justify-center items-center flex-wrap">
+                    <div id="cover1" style="background-image: url(./assets/images/T-shirt/plain-t-shirts2.jpg);" class="bg-cover h-36 w-[8.5rem] rounded-lg shadow-sm shadow-black/10 cursor-pointer">
+                        
+                    </div>
+                    <div id="cover2" style="background-image: url(./assets/images/T-shirt/t-shirt-4.jpg);" class="bg-cover h-36 w-[8.5rem] rounded-lg shadow-sm shadow-black/10 cursor-pointer">
+                        
+                    </div>
+                    <div id="cover3" style="background-image: url(./assets/images/T-shirt/Plain\ T-shirts-2.jpg);" class="bg-cover h-36 w-[8.5rem] rounded-lg shadow-sm shadow-black/10 cursor-pointer">
+                        
+                    </div>   
+                </div>
+            </div>
+
+            <!-- right -->
+            <div class="flex flex-col gap-9 containeranimation">
+                <div class="flex flex-col gap-4">
+                    <h2>Plain T-shirts</h2>
+                    <div class="flex gap-1">
+                        <img src="./assets/images/rewiev/Layer 2.svg" alt="">
+                        <img src="./assets/images/rewiev/Layer 2.svg" alt="">
+                        <img src="./assets/images/rewiev/Layer 2.svg" alt="">
+                        <img src="./assets/images/rewiev/Layer 2.svg" alt="">
+                        <img src="./assets/images/rewiev/Layer 2.svg" alt="">
+                        <span class="text-[#A4A4A4] text-[16px] ml-2">42 reviews</span>
+                    </div>
+                    <h3 class="mt-3">RS:2000.00</h3>
+                    
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p class="text-left sm:w-[30rem] opacity-80 text-[#010101]">Get your hands on the perfect sized t-shirt!
+                         Our oversize t-shirts are the perfect product for everyday wear!</p>
+
+                    <ul class="list-disc ml-5 opacity-80 text-[#010101]">
+                        <li>Fiber Content: 65% Cotton 35% Polyester</li>
+                        <li>Tag-free</li>
+                        <li>Regular Fit</li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col gap-4">
+                    <p class="text-lg text-[#010101] ">Size:</p>
+                    <div class="flex gap-4 items-center">
+                        <button class="text-lg text-[#010101] py-1 px-3 bg-[#D3D1CE] hover:bg-[#A4A4A4] transition-all ease-in-out hover-text">S</button>
+                        <button class="text-lg text-[#010101] py-1 px-3 bg-[#D3D1CE] hover:bg-[#A4A4A4] transition-all ease-in-out hover-text">M</button>
+                        <button class="text-lg text-[#010101] py-1 px-4 bg-[#D3D1CE] hover:bg-[#A4A4A4] transition-all ease-in-out hover-text">L</button>
+                        <button class="text-lg text-[#010101] py-1 px-3 bg-[#D3D1CE] hover:bg-[#A4A4A4] transition-all ease-in-out hover-text">XL</button>
+                        <button class="text-lg text-[#010101] py-1 px-3 bg-[#D3D1CE] hover:bg-[#A4A4A4] transition-all ease-in-out hover-text">XXL</button>
+                    </div>
+                </div>
+
+                <div class="flex flex-1 gap-1 bg-[#010101] items-center justify-center py-3 rounded-lg   transition-all ease-in-out hover-button-sm">
+                    <img src="./assets/images/icon/addcart.svg">
+                    <button class="text-white">Add to cart</button>
+                </div>
+                
+            </div>
+            
+        </section>
+
+
+        <footer id="footer" class="flex items-center bg-[#D3D1CE] p-8 justify-center flex-col gap-5 sm:flex-row sm:justify-between flex-wrap">
+            <div class="flex flex-col items-center  justify-center gap-3 pb-2 ">
+                <img src="./assets/images/logo/logo.png" alt="" width="100">
+                <p class="text-center opacity-50 text-lg sm:w-[250px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="flex gap-4 justify-start items-start">
+                    <img src="./assets/images/icon/mesenger.png" alt="" class="cursor-pointer">
+                    <img src="./assets/images/icon/in.png" alt="" class="cursor-pointer">
+                    <img src="./assets/images/icon/twtter.png" alt="" class="cursor-pointer">
+                </div>
+            </div>
+
+            <div class="flex flex-col items-start justify-start gap-5 pb-2">
+                <h6>Company</h6>
+                <p class="cursor-pointer">Product</p>
+                <p class="cursor-pointer">CATEGORY</p>
+                <p class="cursor-pointer">APP</p>
+                <p class="cursor-pointer">CONTACT US</p>
+            </div>
+
+            <div class="flex flex-col items-start justify-start gap-5 pb-2">
+                <h6>Resources</h6>
+                <p class="cursor-pointer">Template</p>
+                <p class="cursor-pointer">Invoice</p>
+                <p class="cursor-pointer">Feature name</p>
+                <p class="cursor-pointer">Feature name</p>
+            </div>
+
+            <div class="flex flex-col items-start justify-start gap-5">
+                <h6>Join Our Newsletter</h6>
+                <div class="flex items-center justify-between gap-2 flex-wrap">
+                    <input type="text" placeholder="Your massege..." class="pr-7  p-2 rounded-lg">
+                    <button class="py-2 px-4 rounded-xl bg-[#E28917]">Send</button>
+                </div>
+                
+                <p class="opacity-50">will sed you weekly update foryour better products.</p>
+            </div>
+        </footer>
+
+    </main>
+</body>
+<script src="./img-change-script.js"></script>
+</html>

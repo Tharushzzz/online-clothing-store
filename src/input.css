@@ -1,0 +1,193 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+
+    h1 {
+        @apply text-6xl font-bold;
+    }
+    h2 {
+        @apply text-5xl font-bold;
+    }
+    h3 {
+        @apply text-4xl font-bold;
+    }
+    h4 {
+        @apply text-3xl font-bold;
+    }
+    h5 {
+        @apply text-2xl font-bold;
+    }
+    h6 {
+        @apply text-xl font-bold;
+    }
+}
+
+@layer components{
+    .menu-item{
+        @apply relative flex h-full items-center p-4 cursor-pointer font-bold text-pink-200 hover:text-zinc-200 hover:bg-white/10 transition-colors ease-in-out
+    }
+}
+
+
+@media (min-width: 883px) {
+    .mdl{
+        display: flex;
+    }
+}
+
+
+@media (min-width: 883px) {
+    .mdh {
+        display: none;
+    }
+}
+
+
+@media (min-width: 740px) {
+    .mdb {
+        background-image: none;
+    }
+}
+
+
+
+@media (min-width: 1237px) {
+    .lgm {
+        gap: 128px;
+        padding-left: 144px;
+    }
+}
+
+.dynamic-background{
+    background-image: url('./assets/images/hero/hero1.jpg');
+    animation: changeBackground 10s infinite;
+}
+
+@keyframes changeBackground {
+    0% {
+      background-image: url('./assets/images/hero/hero1.jpg');
+    }
+    33% {
+      background-image: url('./assets/images/hero/hero2.jpg');
+    }
+    66% {
+      background-image: url('./assets/images/hero/hero3.jpg');
+    }
+    100% {
+      background-image: url('./assets/images/hero/hero4.jpg'); /* Loop back to the first image */
+    }
+  }
+
+
+
+.hover-button:hover {
+    background-color: #2980b9; /* Darken background */
+    transform: scale(1.1); /* Slightly increase button size */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.hover-button-sm:hover {
+    transform: scale(1.02); /* Slightly increase button size */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.hover-text:hover{
+    transform: scale(1.1);
+}
+
+
+.container:hover {
+    transform: scale(1.05); /* Slight scaling effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    background-color: #e2e2d3; /* Change background color slightly */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Ensure smooth transition on hover */
+.container {
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Initial transition */
+}
+
+
+.background-container{
+    transition: background-image 0.5s ease-in-out;
+}
+
+
+
+
+.containeranimation{
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.fadein{
+    animation: fadeIn 1.5s ease-out 0.5s forwards;
+}
+
+.btnlandinganimation{
+    animation: fadeInScale 1.5s ease-out 1.5s forwards;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+.glass{
+    /* background: rgba(255, 255, 255, 0.2); */
+    background: rgb(255 255 255 / 37%);
+    border-radius: 16px;
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+    backdrop-filter: blur(1px);
+    /* -webkit-backdrop-filter: blur(5px); */
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+
+.animation{
+    transform: translateY(50px);
+    opacity: 0;
+    animation: show 0.5s 1s linear 1 forwards;
+    filter: blur(20px);
+}
+
+@keyframes show{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
