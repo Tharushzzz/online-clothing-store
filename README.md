@@ -30,3 +30,5 @@ To run this project locally:
 1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/online-clothing-store.git
+![Screenshot (189)](https://github.com/user-attachments/assets/d43a05a6-bb69-4f33-b083-faf6feeb0965)
+
